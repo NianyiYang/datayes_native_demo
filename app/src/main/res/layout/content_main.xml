@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:onClick="onHomeCached"
         android:text="首页（Cached Engine）"
-        app:layout_constraintBottom_toTopOf="@id/btn_router"
+        app:layout_constraintBottom_toTopOf="@id/btn_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_new_engine"
@@ -34,14 +34,25 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/btn_router"
+        android:id="@+id/btn_message"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="onRouter"
-        android:text="Router"
+        android:onClick="onMessage"
+        android:text="Flutter与Native交互"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_with_cache"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_net"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onNetwork"
+        android:text="Flutter网络请求"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_message"
         tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
